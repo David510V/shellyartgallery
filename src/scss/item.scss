@@ -1,0 +1,93 @@
+@import './vars.scss';
+
+body{
+    background-color: #F1D2C8;
+   
+}
+
+.custom-radio .custom-control-label::before {
+    background-color:$lightblue; 
+    
+}
+
+
+.wrapper{
+    h1,h2{
+        font-size: 2.5vw;
+    }
+    label{
+      font-size: 1.5vw;
+    }
+    margin: 2vh 5.5vw 0vh 5.5vw;
+    display: flex;
+    
+    .flex1{
+        width: 25%;
+        text-align: center;
+    }
+
+    .flex2{
+        width: 50%;
+        text-align: center;
+    }
+
+    .flex3{
+        width: 25%;
+        text-align: center;
+    }
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: $lightblue;  
+    border-radius: 50%;
+}
+label{
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+input[type=radio]:checked ~ label{
+  color: $blue;
+}
+
+.btn{
+    font-size: 1.8vw;
+    color: black;
+    background-color:$blue;
+}
+
+.btn:hover{
+    color: $fontColor;
+}
+
+
+/*BIG ITEM*/
+.size1{
+  width: 18vw;
+  height: 50vh;
+}
+.size2{
+  width:20vw;
+  height: 60vh;
+}
+.size3{
+  width:25vw;
+  height: 64vh;
+}
+
+.frame{
+  border: 0px solid black;
+}
+.frame1{
+  border:2px solid black;
+}
+.frame2{
+  border:10px solid black;
+}
+.frame3{
+  border:5px solid black;
+}
+
+
+/*SMALL ITEM*/

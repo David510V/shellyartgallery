@@ -1,0 +1,16 @@
+export const obj=[
+    {id:`Expression`,img:'Expression',desc:'Ink on Paper, 2019.'},
+    {id:`The-Three-Muses`,img:'The-Three-Muses',desc:'Oil on Canvas, 2019'},
+    {id:`Lust`,img:'Lust',desc:'Ink on paper,2020.'},
+    {id:`Judging-Look`,img:'Judging-Look',desc:'Ink on papar,2019.'},
+    {id:`Expression1`,img:'Expression1',desc:'Ink on Paper, 2019.'},
+    {id:`Pigeon`,img:'Pigeon',desc:'Ink on Paper, 2019. '},
+    {id:`Cheeky`,img:'Cheeky',desc:'Ink on Paper, 2019.'},
+    {id:`Passion`,img:'Passion',desc:'Ink on paper,2020.'},
+    {id:`Relax`,img:'Relax',desc:'Ink on papar,2019.'},
+    {id:`Untitled`,img:'Untitled',desc:'Ink on Paper, 2020.'},
+    {id:`David`,img:'David',desc:'Ink on Paper, 2018.'},
+    {id:`Gisselle`,img:'Gisselle',desc:'Pencil on Paper, 2019.'},
+    {id:`Fight-Mood`,img:'Fight-Mood',desc:'Ink on papar,2020.'},
+    // {id:13,img:'img13',desc:'13'},
+]

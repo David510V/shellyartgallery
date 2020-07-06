@@ -1,0 +1,28 @@
+@import './vars.scss';
+
+.body{
+  .order{
+    margin-left: 2.3vw; font-size: 2.2vw;background-color:$lightblue;
+       
+ }
+}
+
+
+.order:hover{
+    color: $fontColor;
+}
+
+.modal-content{
+  background-color: $mainColor;
+}
+.modalDesc{
+  background-color: $mainColor;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  padding-top: 15px;
+  font-size: 15px;
+ /*border: $border;*/
+  height: 650px;
+  
+}

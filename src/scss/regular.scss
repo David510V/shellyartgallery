@@ -1,0 +1,275 @@
+@import './vars.scss';
+
+.navr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 21.8vw;
+
+    .aboutR{
+        
+        color:$fontColor ;
+        font-size: 1.4vw;
+       
+    }
+
+    .contactR{
+        
+        color: $fontColor;
+        font-size: 1.4vw;
+        
+    }
+}
+
+
+
+.logo{
+    width: 100%;
+    margin-bottom: 1.5vh;
+    text-align: center;
+    margin-left: 0.7vw;
+}
+
+.logo  img{
+  
+  width: 7%;
+  margin-left: 1.3vw;
+  height: 100%;
+}
+
+
+.heading{
+    text-align: center;
+    color: $fontColor;
+    margin-top: 5vh;
+
+    .big{
+        font-weight: 700;
+    font-size: 16vw;
+    margin-bottom: -2.2vw;
+    }
+    .small{
+        margin-left: 3vw;
+        line-height: 0;
+        font-size: 2.3vw;
+        text-align: center;
+    }
+}
+
+.arrow{
+    margin-top: 16vh;
+    margin-left: 2.15vw;
+    text-align: center;
+    margin-bottom: 18vh;
+}
+
+@keyframes arrowHover {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(180deg);
+    }
+    
+}
+
+@keyframes arrowOut{
+    from{
+        transform: rotateZ(180deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+
+.arrow svg{
+    transition:opacity 1s, transform 1s;
+    cursor: pointer;
+}
+.arrow svg:hover{
+    -webkit-transform: rotateZ(180deg);
+}
+
+
+.section1{
+    background-color: $blue;
+    color: $button;
+    display: flex;
+    // margin-bottom: -10.7vh;
+    .section1Content{
+        width: 65%;
+        padding: 2vw 2vw 1vw 3vw;
+        .head{
+            color: $button;
+            font-size: 11vw;
+            font-weight: 700;
+            letter-spacing: -0.7vw;
+            line-height: 93%;
+        }
+        .sub{
+            
+            color: $button;
+            font-size: 1.8vw;
+            font-weight: 200;
+            padding-left: 0.7vw;
+            padding-right: 11vw;
+        }
+    }
+
+    .section1Img{
+        width: 35%;
+        padding: 0;
+        transform: rotateY(180deg);
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.section2{
+    background-color: $lightGreen;
+    display: flex;
+    padding: 0;
+    
+    .section2Img{
+        width: 65%;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .section2Content{
+        width: 35%;
+        padding-top: 2.5vh;
+        p{
+            text-align: center;
+            color: $fontColor;
+            font-weight: 600;
+            font-size: 6.5vw;
+            letter-spacing: -0.5vw;
+        }
+    }
+}
+
+.section3{
+    display: flex;
+    background-color: $fontColor;
+
+    .gallery3{
+        width: 65%;
+        .rowT{
+            margin: 4vh;
+        }
+        .Title{
+            font-size: 12vw;
+            font-weight: 600;
+            color: white;
+            letter-spacing: -0.9vw;
+            text-align: center;
+            padding-right: 2.28vw;
+        }
+
+        .itemRow{
+            text-align: center;
+            margin: auto;
+            margin-top: 4vh;
+            
+            .itemImg{
+                border: 6px solid $hardGrey;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            .itemDesc{
+                color: $mainColor;
+                margin: auto;
+                font-size:1.2vw ;
+                font-weight: 300;
+                margin-top: 3vh;
+
+                p{
+                    line-height: 60%;
+                }
+            }
+
+            .itemBtn{
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-weight: 600;
+                font-size: 1.4vw;
+               outline: none;
+               transition: 0.3s ease;
+            }
+
+            
+           
+        }
+    }
+    .section3Img{
+        width: 35%;
+        img{
+            width: 100%;
+            height:auto;
+            object-fit: cover;
+        }
+    }
+}
+
+.brown{
+    background-color: $fontColor;
+    height: 100%;
+}
+
+
+@media (min-width:500px) and (max-width:1024px){
+    .section3{
+        .gallery3{
+            .itemRow{
+                .itemDesc{
+                    font-size: 2vw;
+                }
+                .itemBtn{
+                    font-size: 2.2vw;
+                }
+              }
+           }
+    }
+
+    .heading{
+        .big{
+        font-size: 16vw;
+        margin-bottom: -2.2vw;
+        }
+        .small{
+            margin-left: 3vw;
+            line-height: 0;
+            font-size: 2.5vw;
+            text-align: center;
+        }
+    }
+
+    .section1{
+        background-color: $blue;
+        color: $button;
+        display: flex;
+        // margin-bottom: -10.7vh;
+        .section1Content{
+            .sub{
+                
+                font-size: 1.85vw;
+                
+            }
+        }
+    
+    }
+    
+}

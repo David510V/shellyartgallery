@@ -1,0 +1,209 @@
+@import './vars.scss';
+
+body{
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+@media (min-width:300px) and (max-width:700px){
+    .nav{
+        background-color: $fontColor;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0rem;
+        width: 100%;
+        height: 7.5vh;
+    }
+    
+    .nav .about{
+       margin-left: 5.5vw;
+    }
+    
+    .nav .contact{
+        margin-right: 3.5vw;
+    }
+    
+    
+    .nav a{
+        display: block;
+        color: $mainColor;
+        text-decoration: none;
+        font-size: 5vw;
+        margin-top: 1.4vh;
+    }
+    
+    .logo{
+        width: 100%;
+        margin-top: 1.5vh;
+        text-align: center;
+        margin-top: 3vh;
+    }
+    
+    .logo figure img{
+      margin: auto;
+      width: 10%;
+      height: 10%;
+    }
+    
+    .top{
+        
+        .heading{
+            margin-top: 30vh;
+            
+        }
+        
+        .heading h1{
+            text-align: center;
+            font-size: 17vw;
+            font-weight: 600;
+            color: $fontColor;
+        }
+        
+        
+        .arrow{
+            margin-top: 25vh;
+            margin-left: 3px;
+            text-align: center;
+            transform-origin: center;
+            transform-box:fill-box ;
+            
+        }
+
+       @keyframes arrowHover {
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(180deg);
+        }
+        
+     }
+
+        @keyframes arrowOut{
+            from{
+                transform: rotateZ(180deg);
+            }
+            to{
+                transform: rotateZ(0deg);
+            }
+        }
+
+        .arrow svg{
+            animation: arrowOut  1s ease both;
+        animation-fill-mode: forwards;
+            
+               
+        }
+        .arrow svg:hover{
+            animation: arrowHover  1s ease both ;
+    animation-fill-mode: forwards;
+            
+        }
+    
+    
+    }
+    
+    
+    
+    
+    /////////SECTION ///// / 
+    
+    .section{
+        margin-top:32vh ;
+        background-color: $lightGreen;
+        color: $fontColor;
+        display: flex;
+        
+        .sectionTitle{
+            padding-top: 1vw;
+            margin-left: 3vw;
+            font-size: 10vw;
+            font-weight: 600;
+            width: 60%;
+        }
+        .sectionImg{
+            width: 40%;
+    
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+
+    .sectionBigImg{
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            object-fit: fill;
+            height: auto;
+        }
+    }
+
+
+
+    .gallery{
+        background-color: $fontColor;
+        height: 100%;
+        padding-bottom: 8vh;
+        .galleryHead{
+            color: white;
+            font-weight: bolder;
+            font-size: 20vw;
+            text-align: center;
+            p{
+                margin-bottom: 0;
+            }
+        }
+
+        .galleryItems{
+            
+            .item{
+                text-align: center;
+                display: block;
+                margin: auto;
+                .itemImg{
+                    width:100%;
+                    margin-left: -4.5vw;
+                    margin-right: 0vw;
+
+                    img{
+                        margin-right: 0vw;
+                        border: 6px #A1A0A0 solid;
+                        width: 120%;
+                        height: auto;
+                        object-fit: fill;
+                    }
+                }
+                .itemDesc{
+                    
+                    color: $lightMain;
+                     margin-top: 2vh;
+                     padding-left: 1.8vw;
+
+                    p{
+                        font-size: 4.2vw;
+                        font-weight: 300;
+                        padding-left: 0vw;
+                        line-height: 2vh;
+                    }
+
+                    button{
+                       
+                        margin-top: 0vh;
+                        padding-left:3.1vw;
+                        margin-bottom: 3vh;
+                        background-color: transparent;
+                        border: none; 
+                        font-size: 5.5vw;
+                        color: $button;
+                    }
+                }
+
+            }
+        }
+    }
+}

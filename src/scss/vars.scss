@@ -1,0 +1,16 @@
+$mainColor:#F1D2C8;
+$green:#79A682;
+$lightGreen:#D5F2DB;
+$blue:#7998A6;
+$lightblue:#BDE2F2;
+$fontColor:#534643;
+$lightMain:#F2D3C9;
+$button:#E5E5E5;
+$hardGrey:#A1A0A0;
+
+%grow{
+    cursor: pointer;
+   transition: all 0.5s ease-in-out;
+   border: 1px solid rgba(141, 141, 138, 0.5);
+ 
+}

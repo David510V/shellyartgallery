@@ -1,0 +1,100 @@
+@import './vars.scss';
+
+
+body{
+  
+h2{
+  color: $fontColor;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.col-6{
+  text-align: center;
+}
+
+.size:hover{
+transition: all 0.5s ease-in-out;
+transform: scale(1.1); 
+background-color: $blue;
+}
+.size { 
+@extend %grow
+};
+
+.frame{
+@extend %grow
+}
+
+.red{
+transition: all 0.5s ease-in-out;
+transform: scale(1.1); 
+background-color: $blue;
+}
+
+label{
+cursor: pointer;
+font-size: 5vw;
+}
+
+.btn{
+  font-size:6vw;
+  background-color:$blue;
+  margin-top: 1vh;
+  
+}
+.btn:hover{
+  color: $fontColor;
+}
+
+
+
+.modal-content{
+background-color: $mainColor;
+}
+
+.modalDesc2{
+background-color: $mainColor;
+color: black;
+text-align: center;
+padding: 10px;
+padding-top: 15px;
+font-size: 4vw;
+/*border: $border;*/
+height: 550px;
+
+.btn{
+    font-size: 1vw;
+}
+.btn:hover{
+    color: $fontColor;
+}
+}
+/*BIG ITEM*/
+.size1{
+width: 240px;
+height: 300px;
+}
+.size2{
+width: 260px;
+height: 350px;
+}
+.size3{
+width: 280px;
+height: 400px;
+}
+
+
+.frame1{
+border:2px solid black;
+}
+.frame2{
+border:10px solid black;
+}
+.frame3{
+border:5px solid black;
+}
+
+
+/*SMALL ITEM*/
+}
