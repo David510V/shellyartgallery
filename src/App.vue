@@ -13,7 +13,20 @@ export default {
     appHead:Header,
     appFoot:Footer
   },
-
+    mounted(){
+        this.mountedFin("Mounted")
+    },
+     destroyed () {
+      this.destroyedFin()
+    },
+    methods: {
+        mountedFin(arg){
+            console.log(arg)
+        },
+        destroyedFin(arg){
+            console.log(arg)
+        },
+    }
 }
 
 
