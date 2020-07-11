@@ -1,14 +1,13 @@
 <template>
   <div>
-      
     <div class="nav">
-      <div class="about">
+      <div class="aboutR">
         <router-link :to="{ name: 'about'}">
         <a href="">ABOUT</a>
         </router-link>
       </div>
       <div class="contact">
-        <router-link :to="{ name: 'about'}">
+        <router-link :to="{ name: 'contact'}">
         <a href="">CONTACT</a>
         </router-link>
       </div>
@@ -20,15 +19,8 @@
       </figure>
       </router-link>
     </div>
-
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style lang="scss">
     @import "../scss/mobile.scss";

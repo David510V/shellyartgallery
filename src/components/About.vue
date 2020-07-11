@@ -1,6 +1,8 @@
 <template>
 <div>
-  <apphead></apphead>
+  <keep-alive>
+     <component class="regular" :is="showHead"></component>
+  </keep-alive>
   <div class="about">
       <div class="aboutImg">
         <img src="../../public/img/Bath.jpg" alt="">
@@ -20,7 +22,11 @@
 <script>
 import header from '../views/headerMobile.vue';
 export default {
-  
+  data() {
+    return {
+      showHead:'apphead'
+    }
+  },
    components: {
     apphead:header
     },

@@ -1,7 +1,11 @@
 <template>
   <div>
-     <regular class="regular"  ></regular>
-     <mobile class="mobile"></mobile>
+     <keep-alive>
+     <component class="regular" :is="showRegular"></component>
+     </keep-alive>
+     <keep-alive>
+     <component class="mobile" :is="showMobile"></component>
+     </keep-alive>
      
   </div>
 </template>
@@ -10,6 +14,12 @@
 import mobile from './Mobile.vue'
 import regular from './Regular.vue'
 export default {
+   data() {
+      return {
+         showRegular:'regular',
+         showMobile:'mobile'
+      }
+   },
  components: {
     mobile:mobile,
     regular:regular

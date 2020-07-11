@@ -1,8 +1,9 @@
 <template>
 <div>
-  <apphead></apphead>
+ <keep-alive>
+     <component class="regular" :is="showRegular"></component>
+     </keep-alive>
   <div class="about">
-      
       <div class="aboutContent">
           <h1>Shelly Feterman</h1>
           <br>
@@ -22,7 +23,11 @@
 <script>
 import header from '../views/headerMobile.vue';
 export default {
-  
+  data() {
+    return {
+      showHead:'apphead'
+    }
+  },
    components: {
     apphead:header
     },

@@ -110,14 +110,7 @@
 
 <script>
 import {obj} from '../data/data.js'
-import Header from '../views/header.vue';
-import Footer from '../views/footer.vue';
-
 export default {
-  components:{
-    appHead:Header,
-    appFoot:Footer
-  },
   data() {
       return {
         items:obj

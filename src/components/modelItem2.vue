@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12"><img id="mobileImg2" :src="require(`../../public/img/${img}.jpg`)" width="280px" height="270px" alt=""></div>
-                                    
+                                       
                                     </div>
                                     
                                     </div>
@@ -62,6 +62,7 @@
                               </div>
                         </div>
                         </div>
+                         <br><br><br>
                       </div>
                       
                     </div>

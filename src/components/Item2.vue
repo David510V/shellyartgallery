@@ -1,6 +1,12 @@
 <template>
   <div>
-    <apphead></apphead>
+    <div class="logo">
+      <router-link :to="{ name: 'Home'}">
+      <figure>
+        <img src="../../public/img/Brown.png" alt="">
+      </figure>
+      </router-link>
+    </div>
      <div class="container-fluid mt-4">
             <div class="row mt-1">
               
@@ -35,18 +41,18 @@
 
               <div class="col-12 col-md-4 text-center">
                   <img class="imgItem mt-3 mb-2" id="mobileImg" :src="require(`../../public/img/${img}.jpg`)"  width="320px" height="400px" alt="">
-                  <h1 class="mt-md-2 mt-sm-4 text-center">{{img}}</h1>
-                   <button type="button" class="btn maOrder" data-toggle="modal"  data-target="#modalSmall">
+                 <br><br> <h1 class="mt-md-2 mt-sm-4 text-center">{{img}}</h1>
+                   <button @click="modal=true" type="button" class="btn maOrder" data-toggle="modal"  data-target="#modalSmall">
                    Make Order
                   </button>
-                  
+                  <br><br><br>
               </div>
               
             </div>
              
 
         </div>
-        <modelitem2 :img="img" :frameSmall="frameSmall"  :sizeSmall="sizeSmall" ></modelitem2>
+        <modelitem2 v-if="modal" :img="img" :frameSmall="frameSmall"  :sizeSmall="sizeSmall" ></modelitem2>
    </div>
 
   
@@ -64,7 +70,8 @@ export default {
       img:this.$route.params.img,
       desc:this.$route.params.desc,
       frameSmall:'',
-      sizeSmall:''
+      sizeSmall:'',
+      modal:false
     }
   },
    components: {

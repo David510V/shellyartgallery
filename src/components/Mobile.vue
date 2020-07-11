@@ -2,7 +2,7 @@
   <div>
 
     <div class="nav">
-      <div class="about">
+      <div class="aboutR">
         <router-link :to="{ name: 'about'}">
         <a href="">ABOUT</a>
         </router-link>

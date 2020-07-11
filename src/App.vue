@@ -6,13 +6,7 @@
 
 
 <script>
-import Header from '../src/views/header.vue';
-import Footer from '../src/views/footer.vue';
 export default {
-  components:{
-    appHead:Header,
-    appFoot:Footer
-  },
     mounted(){
         this.mountedFin("Mounted")
     },

@@ -26,7 +26,7 @@
                 <img id="Mainimg" class="imgItem mt-3 mb-2" style="cursor: none;" :src="require(`../../public/img/${img}.jpg`)"  width="320px" height="400px" alt="">
                 <h1 class="mt-md-2 mt-sm-4">{{img}}</h1>
                 <h2> {{desc}}</h2>
-                <button class="btn buttn mt-2 mb-3" style="font-size:1.7vw"  data-toggle="modal"  data-target="#modal">Make Order</button>
+                <button class="btn buttn mt-2 mb-3" style="font-size:1.7vw" @click="modal=true" data-toggle="modal"  data-target="#modal">Make Order</button>
 
             </div>
 
@@ -70,7 +70,8 @@ export default {
       img:this.$route.params.img,
       desc:this.$route.params.desc,
       frame:'frame1',
-      size:'040X60'
+      size:'040X60',
+      modal:false
     }
   },
    components: {

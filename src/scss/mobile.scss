@@ -15,7 +15,7 @@ body{
         height: 7.5vh;
     }
     
-    .nav .about{
+    .nav .aboutR{
        margin-left: 5.5vw;
     }
     
@@ -113,7 +113,7 @@ body{
         background-color: $lightGreen;
         color: $fontColor;
         display: flex;
-        
+        width: 101%;
         .sectionTitle{
             padding-top: 1vw;
             margin-left: 3vw;
@@ -134,7 +134,7 @@ body{
     }
 
     .sectionBigImg{
-        width: 100%;
+        width: 101%;
         height: auto;
         img{
             width: 100%;
@@ -149,6 +149,7 @@ body{
         background-color: $fontColor;
         height: 100%;
         padding-bottom: 8vh;
+        width: 101%;
         .galleryHead{
             color: white;
             font-weight: bolder;
